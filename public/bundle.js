@@ -25028,15 +25028,29 @@
 /* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(8);
 
 	var About = function About(props) {
 	    return React.createElement(
-	        'h3',
+	        "div",
 	        null,
-	        'About component'
+	        React.createElement(
+	            "h1",
+	            { className: "text-center" },
+	            "About"
+	        ),
+	        React.createElement(
+	            "h2",
+	            { className: "text-center" },
+	            "Wer hat's gebaut?"
+	        ),
+	        React.createElement(
+	            "p",
+	            null,
+	            "me."
+	        )
 	    );
 	};
 
