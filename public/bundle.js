@@ -113,7 +113,7 @@
 	$(document).foundation();
 
 	// App CSS
-	__webpack_require__(262);
+	__webpack_require__(266);
 
 	ReactDOM.render(React.createElement(
 	    Router,
@@ -27234,13 +27234,17 @@
 
 
 /***/ }),
-/* 262 */
+/* 262 */,
+/* 263 */,
+/* 264 */,
+/* 265 */,
+/* 266 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(263);
+	var content = __webpack_require__(267);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(261)(content, {});
@@ -27249,8 +27253,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../../node_modules/css-loader/index.js!./app.css", function() {
-				var newContent = require("!!../../node_modules/css-loader/index.js!./app.css");
+			module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/index.js!./app.scss", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/index.js!./app.scss");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -27260,7 +27264,7 @@
 	}
 
 /***/ }),
-/* 263 */
+/* 267 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(260)();
@@ -27268,7 +27272,7 @@
 
 
 	// module
-	exports.push([module.id, ".page-title {\n    margin-top: 2.5rem;\n    margin-bottom: 2.5rem;\n}\n\ninput[type=search] {\n    box-shadow: none;\n}\n", ""]);
+	exports.push([module.id, ".page-title {\n  margin-top: 2.5rem;\n  margin-bottom: 2.5rem;\n  color: #555; }\n\ninput[type=search] {\n  box-shadow: none; }\n", ""]);
 
 	// exports
 
